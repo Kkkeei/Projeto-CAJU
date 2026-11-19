@@ -42,7 +42,7 @@ A branch `main` consultada no GitHub contém somente `.gitignore`, `LICENSE` e `
 
 ### Normalização e tokenização
 
-A normalização NFC, `lower()` opcional, remoção explícita de marcas diacríticas e colapso de espaços são coerentes. O comportamento padrão preserva acentos. A tokenização `[ ^\\W_ ]+` (sem os espaços desta representação) extrai sequências Unicode alfanuméricas e trata pontuação/underscore como separadores. É baseline lexical, não segmentador linguístico completo.
+A normalização NFC, `lower()` opcional, remoção explícita de marcas diacríticas e colapso de espaços são coerentes. O comportamento padrão preserva acentos. A expressão regular `[^\\W_]+` extrai sequências Unicode alfanuméricas e trata pontuação/underscore como separadores. É baseline lexical, não segmentador linguístico completo.
 
 ### Vocabulário
 
