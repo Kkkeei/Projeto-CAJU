@@ -1,11 +1,45 @@
 # Projeto-CAJU
-Células Artificiais de Junção Unificada: Motor de NLP e Geração de Código Ultraleve em Python/NumPy.
 
----
+**Células Artificiais de Junção Unificada** — ecossistema modular de inteligência artificial em Python/NumPy.
 
-## A Arquitetura do Projeto Caju
+O CAJU organiza componentes com responsabilidades específicas:
 
-Imagine o sistema como uma linha de montagem dentro do seu código Python:
-• Célula 1 — O Roteador (Seu Motor NumPy): Usa Álgebra Linear (vetores e multiplicação de matrizes) para entender a intenção do usuário. Ele decide se a mensagem é apenas bate-papo ou se exige programação.
-• Célula 2 — O Conversador (O "Cérebro" Social): Focado em linguagem natural, empatia e contexto. Ele também faz o papel de "crítico" (conversando consigo mesmo para revisar o que vai dizer).
-• Célula 3 — O Codificador (O Especialista Técnico): Uma IA focada estritamente em gerar, testar e corrigir código limpo, sem gastar recursos com conversa fiada.
+- **Cajueira:** motor computacional e biblioteca central de NLP, matemática, aprendizado de máquina e infraestrutura de modelos clássicos.
+- **Cajuína:** agente conversacional, responsável pela experiência de diálogo, contexto, memória e uso de ferramentas.
+- **Castanha:** agente especializado em programação, responsável por analisar, escrever, testar e corrigir código.
+
+## Arquitetura
+
+A visão inicial do ecossistema separa três funções:
+
+1. **Motor e roteamento:** transforma entradas em representações processáveis e encaminha tarefas.
+2. **Agente conversacional:** conversa com o usuário e coordena contexto e ferramentas.
+3. **Agente de programação:** executa fluxos especializados de desenvolvimento de software.
+
+A Cajueira fornece a fundação algorítmica, mas não substitui os agentes Cajuína e Castanha. Interfaces conversacionais, memória de diálogo, execução de ferramentas e orquestração de agentes permanecem em camadas próprias.
+
+## Componente disponível
+
+### Cajueira
+
+A primeira fundação implementada está em [`Cajueira/`](Cajueira/).
+
+- [README e instalação](Cajueira/README.md)
+- [Arquitetura](Cajueira/docs/ARCHITECTURE.md)
+- [Relatório de auditoria técnica](Cajueira/docs/AUDIT_0.1.0.md)
+- [Referência da API](Cajueira/docs/API_REFERENCE.md)
+- [Histórico de versões](Cajueira/CHANGELOG.md)
+
+A Cajueira 0.1.x inclui tokenização Unicode básica, vocabulário treinável, Bag of Words, TF-IDF, operações vetoriais, Multinomial Naive Bayes, MLP com NumPy e roteamento lexical de intenções. Ela não é um LLM, não gera linguagem livre e não oferece ainda runtime de agentes.
+
+## Princípios do repositório
+
+- Manter os componentes desacoplados por APIs explícitas.
+- Evitar dependências pesadas sem necessidade demonstrada.
+- Documentar limitações e decisões arquiteturais.
+- Não confundir exemplos funcionais com evidência de generalização.
+- Preservar histórico e evoluir componentes em branches e pull requests.
+
+## Licença
+
+MIT. Consulte [`LICENSE`](LICENSE).

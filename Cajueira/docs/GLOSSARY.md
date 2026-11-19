@@ -1,0 +1,26 @@
+# Glossário técnico
+
+- **Corpus:** conjunto de textos usado para análise ou treinamento.
+- **Token:** unidade produzida pelo tokenizador; nesta versão, normalmente uma palavra ou número.
+- **Vocabulário:** conjunto ordenado de tokens conhecidos pelo modelo.
+- **ID / índice:** número inteiro associado a um token.
+- **OOV (out-of-vocabulary):** token que não aparece no vocabulário aprendido.
+- **UNK:** token especial usado para representar tokens desconhecidos.
+- **Padding / PAD:** preenchimento de sequências para que tenham o mesmo comprimento; reservado pelo vocabulário, mas ainda não usado por uma camada de sequência nesta versão.
+- **Bag of Words:** representação que conta ocorrências de palavras e ignora a ordem.
+- **TF:** frequência de um termo em um documento.
+- **DF:** quantidade de documentos que contêm um termo.
+- **IDF:** peso que reduz a importância de termos muito comuns no corpus.
+- **TF-IDF:** combinação de frequência do termo com sua raridade entre documentos.
+- **Embedding:** representação densa e aprendida de um token ou unidade de texto.
+- **Classificação:** atribuição de uma classe a uma entrada.
+- **Naive Bayes:** classificador probabilístico baseado em uma hipótese simplificadora de independência condicional.
+- **MLP:** rede neural formada por camadas densas de neurônios.
+- **Forward propagation:** cálculo das ativações da entrada até a saída.
+- **Backpropagation:** cálculo dos gradientes da perda em relação aos parâmetros.
+- **Softmax:** transformação de logits em valores positivos que somam 1.
+- **Época:** passagem completa pelo conjunto de treinamento.
+- **Batch:** subconjunto de exemplos usado em uma atualização dos parâmetros.
+- **Overfitting:** quando o modelo se ajusta demais aos dados de treinamento e generaliza mal.
+- **Similaridade de cosseno:** medida do alinhamento angular entre vetores; não é uma probabilidade.
+- **Baseline:** modelo simples usado como referência para comparar soluções mais sofisticadas.
